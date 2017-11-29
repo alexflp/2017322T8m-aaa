@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <title>AlphaPay</title>
+      <link rel="shortcut icon"
+
+        href="/images/logo.png">
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+      <link rel="stylesheet" type="text/css" href="/stylesheets/animate.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="/javascripts/web.js"></script>
+      <!-- Compressed CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY=" crossorigin="anonymous" />
+
+      <!-- Compressed JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+      <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+
+      <nav class="navbar navbar-light bg-faded fixed-top">
+        <a class="navbar-brand" href="english">
+          <img id="logo1" src="/images/03.png"  alt="">
+          <img id="logo2" src="/images/ali.png"  alt="">
+          <img id="logo3" src="/images/wechat.png" alt="">
+        </a>
+        <ul class="nav justify-content-end">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/ensol">SOLUTION</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="/enapi">API</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Signup</a>
+            <div class="dropdown-menu dropdown-menu-right">
+                          <a class="dropdown-item" href="/applym">MERCHANTS</a>
+                          <a class="dropdown-item" href="https://flashpayment.com/citypartner_register.html">CITY PARTNER</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://flashpayment.com">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">中文</a>
+          </li>
+
+
+
+        </ul>
+        <li class="nav-item dropdown" id="dp" >
+          <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">reorder</i></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            
+
+            <a class="dropdown-item" href="/ensol">SOLUTION</a>
+            <a class="dropdown-item" href="/enapi">API</a>
+
+            <a class="dropdown-item" href="#contact">CONTACT</a>
+
+            <a class="dropdown-item" href="/applym">MERCHANTS</a>
+            <a class="dropdown-item" href="https://flashpayment.com/citypartner_register.html">CITY PARNTER</a>
+            <a class="dropdown-item" href="https://flashpayment.com">LOGIN</a>
+            <a class="dropdown-item"  href="/">中文</a>
+
+          </div>
+          </li>
+
+
+      </nav>
+
+    </header>
+      <div id="home"></div>
+          <div class="dropdown" id="dpbtn">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropmb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Apply
+              </button>
+              <div class="dropdown-menu" id="onemenu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item"  href="/applym">Merchant</a>
+                <a class="dropdown-item" href="https://flashpayment.com/citypartner_register.html">City Partner</a>
+             
+              </div>
+            </div>
+ <div class="jun">
+
+
+
+
+
+            <div id="carouselExampleIndicatorsone" class="carousel slide" data-ride="carousel">
+             <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicatorsone" data-slide-to="0" class="active"></li>
+               <li data-target="#carouselExampleIndicatorsone" data-slide-to="1"></li>
+
+             </ol>
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <img class="d-block w-100" src="/images/en1.jpg" alt="First slide">
+               <div class="carousel-caption">
+                
+                 <div class="applybox">
+                 
+                     <a class="btn ap" href="/applym" role="button">MERCHANTS APPLY</a>
+                     <br>
+                 <a class="btn ap" href="https://flashpayment.com/citypartner_register.html" role="button">CITY PARTNER APPLY</a> 
+
+                 </div>
+                </div>
+             </div>
+               <div class="carousel-item">
+                 <img class="d-block w-100" src="/images/en2.png" alt="Second slide">
+                   <div class="carousel-caption">
+                 <div class="applybox">
+                   
+                    <a class="btn ap" href="https://www.flashpayment.com/partner_register.html" role="button">MERCHANTS APPLY</a>
+                    <br>
+                   <a class="btn ap" href="https://flashpayment.com/citypartner_register.html" role="button">CITY PARTNER APPLY</a> 
+
+                 </div>
+                 </div>
+                </div>
+
+             </div>
+
+           </div>
+
+
+    </div >
+   
+
+    <div id="particles-js">
+      <div id = "data" >
+
+          <h2> Grow Your Buiness With Ali Pay And Wechat Pay</h2>
+          <div class="row">
+          <div id="dataleft" class="col-8">
+            <img id="compare" src='/images/compare.png' alt=''>
+          </div>
+          <div id="dataright" class="col-4">
+                  <div id="f1"  >
+                        <p>Over 900 Million active Wechat users monthly.</p>
+                    </div>
+                    <div id="f2">
+
+
+                        <p>Over 450 Million active Alipay Users monthly.</p>
+                    </div>
+                    <div id="f3">
+
+
+                      <p>Chinese visitors spent 1275 Million CAD in Canada last year.</p>
+                    </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <script src="/javascripts/particles.js"></script>
+      <script src="/javascripts/ver.js"></script>
+  
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          
+         </ol>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img class="d-block w-100" src="/images/en1.jpg" alt="First slide">
+           <div class="carousel-caption d-none d-md-block">
+               <a href="https://www.flashpayment.com/partner_register.html" id="applybt" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">APPLY</a>
+             </div>
+         </div>
+           <div class="carousel-item">
+             <img class="d-block w-100" src="/images/en2.png" alt="Second slide">
+               <div class="carousel-caption d-none d-md-block">
+               <a href="https://www.flashpayment.com/partner_register.html" id="applybt" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">APPLY</a>
+             </div>
+            </div>
+         
+         </div>
+      
+       </div>
+        <div id="desrowphone">
+          <p><i class="material-icons">whatshot</i>Over 900 Million active Wechat users monthly.</p>
+          <p><i class="material-icons">whatshot</i>Over 450 Million active Alipay Users monthly.</p>
+          <p><i class="material-icons">whatshot</i>2 Million Chinese Immigrants,600,000 Chinese Travellers,180,000 Chinese Students</p>
+          <p><i class="material-icons">whatshot</i>Chinese visitors spent 1275 Million CAD in Canada last year.</p>
+
+        </div>
+
+
+        
+
+      <div id="ser">
+       
+
+      
+
+      </div>
+
+
+
+    <div id="solution">
+        <h2> AlphaPay Solutions</h2>
+
+          <div class="row" id="sol">
+            <div class="col-6">
+              <div id="sharpContainer">
+                <div class="sharp center">
+                    <i id="s4" class="material-icons" >hotel</i>
+                </div>
+                <div class="sharp top">
+                   <i id="s5" class="material-icons" >shopping_cart</i>
+                </div>
+                <div class="sharp top-left">
+                    <i id="s3" class="material-icons">restaurant_menu</i>
+                </div>
+                <div class="sharp top-right">
+                    <i id="s2" class="material-icons">flight</i>
+                </div>
+                <div class="sharp bottom">
+                    <i id="s1" class="material-icons">school</i>
+                </div>
+                <div class="sharp bottom-left">
+
+                </div>
+                <div class="sharp bottom-right">
+
+                </div>
+                </div>
+            </div>
+            <div class="col-6">
+              <div class="showcon">
+                <div id="show1">
+                  <h4>Study abroad</h4>
+                <p >With the increasing number of students studying abroad, the market zize of the service industry is growing. For the education sector, AlphaPay provide a set of educational information, consulting services, experience lectures and a series of marketing services.
+AlphaPay will make cross-border payments become simple and efficient</p>
+                </div>
+                <div id="show2">
+                  <h4>Travel services</h4>
+                <p>Scan QR code to pay ticket is simple and quick to reduce waiting line especially when weekend and holiday, our QR code can be put at either self-service ticket machine or ticket windows.</p>
+                </div>
+                <div id="show3">
+                    <h4>Food Industry</h4>
+                <p > For the food industry, AlphaPay not only helping businesses to access wechat and ali payment, but also provides marketing ordering, take-away and other one-stop service.
+                      Through wechat public account and ali discovery to increase restaurant sales opportunities, improved consumer experience, reduced restaurant operating cost</p>
+                </div>
+                <div id ="show4">
+                    <h4>Hotel</h4>
+                <p> For thousands of tourists from China, they continue to enjoy the familiar purchasing behavior of paying in RMB(CNY) via their Wechat and Ali wallets.
+Wechat official accounts provide a formal way for hotels to interact with their customers through Wechat, and also support pre-authorization payments via Wechat and Ali pay.</p>
+                </div>
+                <div id="show5">
+                    <h4>E-commerce</h4>
+                <p>AlphaPay will provide full technical solutions to Canadian companies who sell products to Chinese consumers via website or any type of e-business. Chinese consumers can pay in CNY by Wechat and Ali pay, merchants get real-time exchange rate of local currency settlement services.</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div id="phonesol">
+            <div id="accordion" role="tablist">
+
+            <div class="card">
+              <div class="card-header" role="tab" id="headingOne">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Study abroad
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p >With the increasing number of students studying abroad, the market zize of the service industry is growing. For the education sector, AlphaPay provide a set of educational information, consulting services, experience lectures and a series of marketing services.
+                    AlphaPay will make cross-border payments become simple and efficient</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  E-commerce
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+
+                  <p>AlphaPay will provide full technical solutions to Canadian companies who sell products to Chinese consumers via website or any type of e-business. Chinese consumers can pay in CNY by Wechat and Ali pay, merchants get real-time exchange rate of local currency settlement services.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingThree">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Travel services
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+
+                <p>Scan QR code to pay ticket is simple and quick to reduce waiting line especially when weekend and holiday, our QR code can be put at either self-service ticket machine or ticket windows.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingFour">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Food Industry
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+
+                  <p > For the food industry, AlphaPay not only helping businesses to access wechat and ali payment, but also provides marketing ordering, take-away and other one-stop service.
+                        Through wechat public account and ali discovery to increase restaurant sales opportunities, improved consumer experience, reduced restaurant operating cost</p>
+              </div>
+            </div>
+          </div>
+            <div class="card">
+              <div class="card-header" role="tab" id="headingFive">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Hotel
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+
+                  <p> For thousands of tourists from China, they continue to enjoy the familiar purchasing behavior of paying in RMB(CNY) via their Wechat and Ali wallets.
+      Wechat official accounts provide a formal way for hotels to interact with their customers through Wechat, and also support pre-authorization payments via Wechat and Ali pay.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            </div>
+
+          </div>
+    </div>
+   
+
+
+      <div id="whyre">
+        <div id="onoffline" >
+          <h2>AlphaPay Service</h2>
+          <div class="card-group">
+            <div class="card">
+              <img class="card-img-top" src="/images/v110.png" alt="Card image cap">
+              <div class="card-body">
+                <h4>Quick Payment</h4>
+                <p class="card-text">The Chinese Payer shows their bar code or QR Code on WeChat's Quick Pay page to the Vendor to scan in order to pay directly.</p>
+
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/images/qr.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4>QR Code Payment</h4>
+                <p class="card-text">QRCode is quickly generated for the merchant，via which the payment from online business and retail business can be easily charged to the merchant CAD bank account</p>
+
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/images/we.png" alt="Card image cap">
+              <div class="card-body">
+                <h4>Web-based App Payment</h4>
+                <p class="card-text">The Chinese Payer opens the Vendor's HTML5 pages on their WeChat and calls the WeChat payment module via the JSAPI interface to pay their transaction.</p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+    
+    
+    
+    
+    
+    
+       <div id="onoffphone">
+        <h2>AlphaPay Service</h2>
+
+                          <i class="material-icons">dock</i>
+                          <h4>Quick Payment</h4>
+                          <p>The Chinese Payer shows their bar code or QR Code on WeChat's Quick Pay page to the Vendor to scan in order to pay directly.</p>
+
+                          <img src='/images/qrcode.jpg' alt='qrcode'>
+                          <h4>QR Code Payment</h4>
+                          <p>QRCode is quickly generated for the merchant，via which the payment from online business and retail business can be easily charged to the merchant CAD bank account</p>
+
+
+
+                          <i class="material-icons">phonelink</i>
+                          <h4>Web-based App Payment</h4>
+                          <p>The Chinese Payer opens the Vendor's HTML5 pages on their WeChat and calls the WeChat payment module via the JSAPI interface to pay their transaction.</p>
+        </div>
+      
+        <div id="feature">
+          <h2>Your Security, Our Responsobility.</h2>
+          <!-- <div class="d-flex justify-content-center">
+            <img id="iphone" src='/images/cs1.jpeg'  alt="iphone">
+          </div> -->
+  
+          <div id="botrow" class="row justify-content-md-center">
+            <div id="f1" class="col-3">
+              <i class="ion-lock-combination"></i>
+              <h5>Secure</h5>
+              <p>All data is encrypted via SSL Transfer Protocol to avoid the data leakage during transmission</p>
+            </div>
+            <div id="f2" class="col-3">
+                <i class="ion-settings"></i>
+                <h5>Technical Support</h5>
+                <p>Customize payment products according to the business of merchant, combine Alipay and Wechat pay QR code to improve user's experience.</p>
+            </div>
+            <div id="f3" class="col-3">
+            <i class="ion-podium"></i>
+              <h5>Marketing services</h5>
+              <p> Provide marketing components for Wechat and Ali Ecology, including Coupons, Lucky money, Membership cards, directly links to Chinese consumers.</p>
+            </div>
+          </div>
+  
+  
+  
+        </div>
+          <div id="phonefe">
+            <h2>Your Security, Our Responsobility.</h2>
+  
+            <div class="fe1">
+              <i class="ion-lock-combination"></i>
+              <h5>Secure</h5>
+              <p>All data is encrypted via SSL Transfer Protocol to avoid the data leakage during transmission</p>
+            </div>
+            <div class="fe1">
+              <i class="ion-settings"></i>
+              <h5>Technical Support</h5>
+                <p>Customize payment products according to the business of merchant, combine Alipay and Wechat pay QR code to improve user's experience.</p>
+            </div>
+            <div class="fe1">
+                <i class="ion-podium"></i>
+              <h5>Marketing services</h5>
+              <p> Provide marketing components for Wechat and Ali Ecology, including Coupons, Lucky money, Membership cards, directly links to Chinese consumers.</p>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    <div id="contact" >
+
+      <div class="row justify-content-md-center">
+      <div class="col-2" id="conleft">
+        <h4>Contact Us</h4>
+
+        <p>International Business Park</p>
+        <p><i class="ion-ios-location"></i> 230-4320 Viking Way</p>
+        <p>Richmond,BC V6V 2L4</p>
+
+        <p><i class="ion-android-call"></i>Tel:1-855 937 7888</p>
+        <p><i class="ion-email"></i>info@alphapay.ca</p>
+      </div>
+        <div class="col-2">
+            <img src="/images/w1.jpg" width="200" height="200" alt="">
+            <h6>AlphaPay Offical Account</h6>
+          </div>
+          <div class="col-2">
+              <img src="/images/kefu.jpg" width="200" height="200" alt="">
+              <h6>AlphaPay Service Account</h6>
+          </div>
+        </div>
+    </div>
+
+    </div>
+    <div id ="phonecontact">
+      <div class = "cont1">
+          <h4>Contact Us</h4>
+
+        <p>International Business Park</p>
+        <p><i class="ion-ios-location"></i> 230-4320 Viking Way</p>
+        <p>Richmond,BC V6V 2L4</p>
+
+        <p><i class="ion-android-call"></i>Tel:1-855 937 7888</p>
+        <p><i class="ion-email"></i>info@alphapay.ca</p>
+      </div>
+
+      <div class = "cont2">
+        <img src="/images/w1.jpg" width="200" height="200" alt="">
+          <h6>AlphaPay Offical Account</h6>
+      </div>
+
+      <div class = "cont3">
+        <img src="/images/kefu.jpg" width="200" height="200" alt="">
+        <h6>AlphaPay Service Account</h6>
+      </div>
+    </div>
+
+<HR>
+
+
+
+    <footer class="text-center">
+
+      </a><br><br>
+      <p>CopyRight © 2017-2018 .All right reserved by AlphaPay.</p>
+
+    </footer>
+  </body>
+</html>

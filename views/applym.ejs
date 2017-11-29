@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+   <% include head %>
+
+ <script src="/javascripts/sol.js"></script>
+
+    
+  </head>
+  <body>
+    <header>
+    <% include header %>
+    </header>
+    
+     <div id="apply">
+      <form role="form" action="/applym"  method="POST">
+        <div class="form-icons" >
+          <h4>商家申请/Apply Form</h4>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">account_circle</i></span>
+            <input class="input-group-field" type="text" id="contact_name" name="conatct_name" placeholder="联系人姓名/Contact name"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"></span>
+            <input class="input-group-field" type="text" id="contact_title" name="conatct_title" placeholder="联系人职位/Contact Title"/>
+          </div>
+          <div class="input-group"><span class="input-group-label">
+            <i class="material-icons"> email</i></span>
+            <input class="input-group-field" type="email" id="email" name="email" placeholder="邮箱地址/Email"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">phone</i></span>
+            <input class="input-group-field" type="text" id="phone" name="phone" placeholder="电话号码/Phone number"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">store</i></span>
+            <input class="input-group-field" type="text" id="store" name="store" placeholder="商铺名称/Store Name"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"></span>
+            <input class="input-group-field" type="text" id="IOB" name="IOB" placeholder="经营种类/Industry of Business"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"></span>
+            <input class="input-group-field" type="text" id="BRN" name="BRN" placeholder="商业注册编号/Business Registered Number"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">location_on</i></span>
+            <input class="input-group-field" type="text" id="storea" name="storea"placeholder="商铺地址/Store Address"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">web</i></span>
+            <input class="input-group-field" type="text" id="webl" name="web" placeholder="商铺网站/Store Website"/>
+          </div>
+          <div class="input-group"><span class="input-group-label"><i class="material-icons">note</i></span>
+            <input class="input-group-field" type="text" id="note" name="note" placeholder="备注/Note"/>
+          </div>
+        </div>
+  <button   id="appbt" class="btn btn-lg btn-primary" type="submit">Submit</button>
+  
+</form>
+
+    </div>
+    <script>
+    $('#apply').on('keypress', function(e) {
+    return e.which !== 13;
+  });
+    </script>
+    <footer>
+        <% include footer %>
+    </footer>
+  </body>
+</html>
