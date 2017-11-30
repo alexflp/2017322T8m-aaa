@@ -91,7 +91,7 @@
     <div id="api-_"><h1>Overview</h1>
 <h2>域名</h2>
 <h4>生产环境</h4>
-<p><a href="https://www.flashpayment.com/">https://www.flashpayment.com/</a></p>
+<p><a href="https://pay.alphapay.ca/">https://pay.alphapay.ca/</a></p>
 <p>沙箱测试参数和生产环境不同，请联系AlphaPay客服帮助配置沙箱环境参数。</p>
 <h2>请求方式和参数格式</h2>
 <p>支付单和退款单提交均为PUT方式，订单查询均为GET方式；包含Request Entity的请求参数格式为json</p>
@@ -138,7 +138,7 @@
 sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 </blockquote>
 <blockquote>
-<p>测试地址：<a href="https://www.flashpayment.com/sign_test.html" target="_blank">https://www.flashpayment.com/sign_test.html</a></p>
+<p>测试地址：<a href="https://pay.alphapay.ca/sign_test.html" target="_blank">https://pay.alphapay.ca/sign_test.html</a></p>
 </blockquote>
 <h2>币种代码</h2>
 <p>由于微信端限制原因，AlphaPay只接受人民币和加元两个币种的支付订单</p>
@@ -181,7 +181,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>QRCode支付单适用于PC端网页/应用进行支付，用户使用微信客户端扫描下单后生成的二维码完成支付。<br> <img class="showp" src="/images/qrcode.png"><br> 返回值包括二维码字符串，二维码图片，支付地址，商户可以自行决定直接展示二维码或跳转支付页，跳转支付页需要带上签名信息。 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -615,7 +615,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>必须先调用创建QRCode订单接口再进行跳转。 建议在用户回调到对应页时通过后台查询订单状态接口确认订单的支付状态。</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
 
 
 
@@ -843,7 +843,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>JSAPI适用于在微信内打开的网页进行支付，如果用户从公众号进入支付页要求公众号已完成认证。用户下单后跳转至AlphaPay订单页，并拉起微信内置收银台完成支付<br> <img class="showp" src="/images/jsapi.png"><br> 返回值包括支付地址，商户应该引导用户跳转支付页，跳转支付页需要带上签名信息； 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -1255,7 +1255,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>JSAPI适用于在微信内打开的网页进行支付，如果用户从公众号进入支付页要求公众号已完成认证。用户下单后跳转至AlphaPay订单页，并拉起微信内置收银台完成支付<br> <img class="showp" src="/images/jsapi.png"><br> 必须先调用创建JSAPI订单接口再进行跳转。若开启直接支付，将不显示订单详情直接弹出支付界面。并且无论结果都会跳到回调页面。 跳回回调页面时不会带上签名参数。建议在用户回调到对应页时通过后台查询订单状态接口确认订单的支付状态。</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
 
 
 
@@ -1494,7 +1494,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>必须先调用创建JSAPI订单接口再进行跳转</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
 
 
 
@@ -1722,7 +1722,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p><b>注意：H5支付接口必须单独申请，腾讯批复后方可使用，有需要的商户请联系AlphaPay客服</b><br> H5支付适用场景为移动端App或者手机自带浏览器进行支付，用户下单后浏览器跳转至微信支付页面并自动拉起微信客户端完成支付。<br> 返回值包括跳转支付地址，跳转支付页需要带上签名信息。 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -2134,7 +2134,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>必须先调用创建H5支付订单接口再进行跳转。 建议在用户回调到对应页时通过后台查询订单状态接口确认订单的支付状态。</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
 
 
 
@@ -2362,7 +2362,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>线下支付订单接口用于带有扫码设备的收银终端进行对接，商户输入金额后要求客户出示支付码，用扫码枪扫码后将扫码内容和金额一并提交并完成支付操作。 线下支付订单接口现已兼容微信、支付宝通道<br> <img src="/images/retail.png"></p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/micropay/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/micropay/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -2808,7 +2808,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>线下QRCode支付用于对接无扫码设备的收银终端，下单后得到二维码地址，自行生成二维码图片后展示在收银终端屏幕上，并由用户使用对应支付客户端进行扫码支付。 线下QRCode现已同时兼容支付宝、微信和翼支付客户端进行支付<br> <img src="/images/retail_api.png"><br> 货币类型如果是CNY，注意通过汇率转换后不得低于0.01CAD，否则订单可以创建成功，但支付时会报金额不合法错误</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/retail_qrcode/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/retail_qrcode/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -3235,7 +3235,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>获取当前微信CAD兑CNY汇率值(1CAD=?CNY)，该汇率仅做参考，以实际成交汇率为准</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/exchange_rate</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/exchange_rate</span></code></pre>
 
 
 
@@ -3475,7 +3475,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>查询范围包括QRCode订单、JSAPI订单和线下支付订单</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -3841,7 +3841,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>一笔支付订单可以分多次退款，退款总金额不得超过实际支付金额，退款币种与支付订单一致</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
 
 
 
@@ -4201,7 +4201,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
 
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
 
 
 
@@ -4554,7 +4554,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
 
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com//api/v1.0/gateway/partners/{partner_code}/orders</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca//api/v1.0/gateway/partners/{partner_code}/orders</span></code></pre>
 
 
 
@@ -5140,7 +5140,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>若订单创建时提供了notify_url，系统会在用户支付成功后向这个地址主动发送支付成功状态推送，请求方式为POST 与服务器API不同，推送校验参数会包含在json内，商户系统应该验证校验参数，确定来源正确后再进行后续操作。 商户系统收到请求后应按要求返回参数，若AlphaPay未收到合法参数，视为商户未接收成功，推送动作最多会重试3次，商户系统应当能够处理收到的重复请求。</p><p></p>
     <span class="type type__post">post</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">https://www.flashpayment.com//notify_url</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">https://pay.alphapay.ca//notify_url</span></code></pre>
 
 
 

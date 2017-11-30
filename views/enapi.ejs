@@ -60,7 +60,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Signup</a>
             <div class="dropdown-menu dropdown-menu-right">
-                          <a class="dropdown-item" href="https://www.flashpayment.com/partner_register.html">MERCHANTS</a>
+                          <a class="dropdown-item" href="https://pay.alphapay.ca/partner_register.html">MERCHANTS</a>
                           <a class="dropdown-item" href="https://flashpayment.com/citypartner_register.html">CITY PARTNER</a>
             </div>
           </li>
@@ -84,7 +84,7 @@
             <a class="dropdown-item" href="/enapi">API</a>
             <a class="dropdown-item" href="/english#contact">CONTACT</a>
 
-            <a class="dropdown-item" href="https://www.flashpayment.com/partner_register.html">MERCHANTS</a>
+            <a class="dropdown-item" href="https://pay.alphapay.ca/partner_register.html">MERCHANTS</a>
             <a class="dropdown-item" href="https://flashpayment.com/citypartner_register.html">CITY PARNTER</a>
             <a class="dropdown-item" href="https://flashpayment.com">LOGIN</a>
             <a class="dropdown-item"  href="/">中文</a>
@@ -150,7 +150,7 @@
     <div id="api-_"><h1>Overview</h1>
 <h2>Domain</h2>
 <h4>Production Environment</h4>
-<p><a href="https://www.flashpayment.com/">https://www.flashpayment.com/</a></p>
+<p><a href="https://pay.alphapay.ca/">https://pay.alphapay.ca/</a></p>
 <p>Sandbox has different sign parameters. Contact us to configure it for you.</p>
 <h2>Request And Parameters</h2>
 <p>Request for payment or refund shall use PUT method. Request for querying order
@@ -198,7 +198,7 @@ Content-Type in the request header shall be set to application/json for all PUT/
 sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 </blockquote>
 <blockquote>
-<p>Test Page：<a href="https://www.flashpayment.com/sign_test.html" target="_blank"> https://www.flashpayment.com/sign_test.html</a></p>
+<p>Test Page：<a href="https://pay.alphapay.ca/sign_test.html" target="_blank"> https://pay.alphapay.ca/sign_test.html</a></p>
 </blockquote>
 <h2>Currency Codes</h2>
 <p>AlphaPay can only accept the following currencies at the moment. Please note that the settlement currency will always be Canadian Dollar.</p>
@@ -240,7 +240,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>QR Code Payment is used for webpage/application on PC. Customers use wechat app to scan QR Code generated when creating order and finish the payment.<br> <img class="showp" src="/images/QRCODE_process_en1.png"><br> Return value contains QR Code string, QR Ccode image and payment page address. Partners can decide how to finish the payment. If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -674,7 +674,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>This page mush be called after payment order has been created. When jumping back to redirection URL, it is recommended to call the order query API to make sure the payment has succeeded.</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
 
 
 
@@ -902,7 +902,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>JSAPI Payment is used to pay in webpage which was opened in WeChat App. If customers enter this page from WeChat Official Account, this Official Account is required to be authorized. Customers will jump to AlphaPay order page and call WeChat Payment Board to finish payment.<br> <img class="showp" src="/images/_JSAPI_process_en1.png"><br> Return value contains a payment page. Partners shall guide users to redirect to the page. Sign params is required when redirect happens. If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -1314,7 +1314,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>This page must be called after Payment Order has been created. If the direct pay mode is on, order details will not display and WeChat payment dialog will be shown automatically when the page loads immediately. and will redirect back no matter the payment succeeds or fails. The redirect URL will not contain sign parameters. When jumping back to redirection URL, it is recommended to call the order query API to make sure the payment has succeeded.</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
 
 
 
@@ -1553,7 +1553,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>This page must be called after Payment Order has been created.</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/wechat_jsapi_gateway/partners/{partner_code}_order_{order_id}</span></code></pre>
 
 
 
@@ -1781,7 +1781,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p><b>Warning：H5 Payment socket requires application separately and requires agreement from Tencent. Merchants who needs this socket please contact AlphaPay first</b><br> H5 Payment is used for payment in Webpage or App on mobile outside WeChat App. The browser would redirect to a webpage from WeChat and call WeChat App to finish the payment.<br> Return value contains a payment page. Partners shall guide users to redirect to this page. Sign params are required. If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -2193,7 +2193,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>This page mush be called after payment order has been created. When jumping back to redirection URL, it is recommended to call the order query API to make sure the payment has succeeded.</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/h5_payment/partners/{partner_code}/orders/{order_id}/pay</span></code></pre>
 
 
 
@@ -2421,7 +2421,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>Retail Passive Payment is used for cashier terminals which can scan BarCode or QRCode. Shop staff input the payment amount and ask customers for their payment code, then system send price and payment code to server and finish the payment. Retail Passive Payment now support both Alipay and WeChat<br> <img src="images/Retail_en1.png"></p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/micropay/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/micropay/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -2867,7 +2867,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>Retail Active Payment is used for cashier terminals which cannot scan Barcode or QRCode. Get the Code url after create the order, convert this url to a QRCode and ask customers use their app to scan this QRCode then finish the payment. Retail Active Payment now support Alipay, WeChat and Bestpay<br> <img src="images/RetailQR_en1.png"><br> If the currency is CNY, equivalent CAD amount shall never less than 0.01CAD, otherwise user will get Invalid Amount Error from WeChat when making the payment.</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/retail_qrcode/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/retail_qrcode/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -3283,7 +3283,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>Get current exchange rate from CAD to CNY provided by WeChat(CAD 1=CNY ?). This exchange rate shown is for reference only, please refer to the real time exchange rate when processing the actual transaction.</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/exchange_rate</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/exchange_rate</span></code></pre>
 
 
 
@@ -3523,7 +3523,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>Including QR Code orders, JSAPI orders and Retail orders</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}</span></code></pre>
 
 
 
@@ -3889,7 +3889,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>One payment order can create more than one refund orders. Total amount of all refund orders must be less than or equal to the actual paid amount and the currency of refund order is the same as the payment order.</p><p></p>
     <span class="type type__put">put</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="put" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
 
 
 
@@ -4249,7 +4249,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
 
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders/{order_id}/refunds/{refund_id}</span></code></pre>
 
 
 
@@ -4603,7 +4603,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>Get a list of orders. This api may change in the future.</p><p></p>
     <span class="type type__get">get</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://www.flashpayment.com/api/v1.0/gateway/partners/{partner_code}/orders</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="get" style=""><code><span class="pln">https://pay.alphapay.ca/api/v1.0/gateway/partners/{partner_code}/orders</span></code></pre>
 
 
 
@@ -5183,7 +5183,7 @@ sign=64712672795f94fa3bfb2e88ac09cb75d09bcf8a3c3dcaa529d8290dd6587060</p>
 
       <p></p><p>If notify_url is provided when order is created. System will post request to this url when the payment succeeds. Request method is POST. Different from Server APIs, sign parameters will be included in json entity. Partner system shall valid them to prevent fake requests. Partner system shall response with correct parameters. If AlphaPay did not receive valid response, system will regard as receiving failed and retry the notification. System will retry up to3 times. Partner system shall be able to handle the repeated requests.</p><p></p>
     <span class="type type__post">post</span>
-    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">https://www.flashpayment.com/notify_url</span></code></pre>
+    <pre class="prettyprint language-html prettyprinted" data-type="post" style=""><code><span class="pln">https://pay.alphapay.ca/notify_url</span></code></pre>
 
 
 
